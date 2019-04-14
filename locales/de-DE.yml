@@ -8,7 +8,7 @@ common:
   intro:
     title: "Was ist Misskey?"
     features: "Funktionen"
-    rich-contents: "Notizen"
+    rich-contents: "Beiträge"
     reaction: "Reaktionen"
     ui: "Benutzeroberfläche"
     drive: "Drive"
@@ -21,7 +21,7 @@ common:
   2fa: "Zwei-Faktor-Authentifizierung"
   got-it: "Verstanden!"
   customization-tips:
-    title: "Anpassung-Tipps"
+    title: "Anpassungs-Tipps"
     gotit: "Verstanden!"
   notification:
     file-uploaded: "Datei hochgeladen!"
@@ -46,7 +46,7 @@ common:
   drive: "Drive"
   messaging: "Unterhaltungen"
   home: "Home"
-  favorites: "Diese Notiz favorisieren"
+  favorites: "Diesen Beitrag favorisieren"
   weekday-short:
     sunday: "So"
     monday: "Mo"
@@ -77,11 +77,11 @@ common:
   note-visibility:
     public: "Öffentlich"
     home: "Startseite"
-    home-desc: "Nur auf die Startseite posten"
+    home-desc: "Auf die Startseite posten"
     followers: "Abonnenten"
     followers-desc: "Nur für diejenigen sichtbar, die dir folgen"
     specified: "Direkt"
-    specified-desc: "Nur für bestimmte Benutzer posten"
+    specified-desc: "Nur für bestimmte Benutzer sichtbar"
     local-public: "Öffentlich (nur lokal)"
     local-home: "Home (nur lokal)"
     local-followers: "Follower (nur lokal)"
@@ -103,7 +103,7 @@ common:
   update-available: "Eine neue Version von Misskey ist verfügbar ({newer}, aktuell ist {current}). Lade die Seite neu um die aktuelle Version zu laden"
   my-token-regenerated: "Dein Token wurde generiert. Du wirst jetzt abgemeldet."
   verified-user: "Verifizierter Benutzer"
-  do-not-use-in-production: "Dies ist eine Entwicklungsversion. Nicht in einer Produktionsumgebung verwenden."
+  do-not-use-in-production: "Dies ist eine Entwicklungsversion. Nicht in einer Produktivumgebung verwenden."
   error:
     retry: "Erneut versuchen"
   reversi:
@@ -117,9 +117,9 @@ common:
     analog-clock: "Analoge Uhr"
     profile: "Profil"
     calendar: "Kalender"
-    timemachine: "Kalender (Zeitmaschiene)"
+    timemachine: "Kalender (Zeitmaschine)"
     activity: "Aktivitäten"
-    rss: "RSS Leser"
+    rss: "RSS Reader"
     memo: "Notizen"
     trends: "Trends"
     photo-stream: "Bilder"
@@ -127,7 +127,7 @@ common:
     version: "Version"
     notifications: "Benachrichtigungen"
     users: "Empfohlene Benutzer"
-    polls: "Umfrage"
+    polls: "Umfragen"
     post-form: "Beitragsform"
     server: "Server-Info"
     nav: "Navigation"
@@ -250,15 +250,15 @@ common/views/components/nav.vue:
   status: "Status"
   wiki: "Wiki"
   donors: "Spender"
-  repository: "Projektarchiv"
+  repository: "Quellcode"
   develop: "Entwickler"
   feedback: "Feedback"
 common/views/components/note-menu.vue:
-  favorite: "Diese Notiz favorisieren"
+  favorite: "Diesen Beitrag favorisieren"
   unfavorite: "Aus Favoriten entfernen"
   pin: "An die Profilseite pinnen"
   delete: "Löschen"
-  delete-confirm: "Diesen Post löschen?"
+  delete-confirm: "Diesen Beitrag löschen?"
   remote: "Auf Quelle anzeigen"
 common/views/components/poll.vue:
   vote-to: "Stimme für '{}'"
@@ -295,8 +295,8 @@ common/views/components/signup.vue:
   password: "Passwort"
   password-placeholder: "Wir empfehlen mindestens 8 Zeichen"
   weak-password: "Schwaches Passwort"
-  normal-password: "Faires Passwort"
-  strong-password: "Schwaches Passwort"
+  normal-password: "Normales Passwort"
+  strong-password: "Starkes Passwort"
   retype: "Wiederholen"
   retype-placeholder: "Bitte das Passwort erneut eingeben"
   password-matched: "OK"
@@ -318,11 +318,11 @@ common/views/components/uploader.vue:
 common/views/components/visibility-chooser.vue:
   public: "Öffentlich"
   home: "Home"
-  home-desc: "Nur auf die Startseite posten"
+  home-desc: "Auf die Startseite posten"
   followers: "Folgende"
   followers-desc: "Nur für diejenigen sichtbar, die dir folgen"
   specified: "Direkt"
-  specified-desc: "Poste nur für bestimmte Benutzer"
+  specified-desc: "Nur für bestimmte Benutzer sichtbar"
   local-public: "Öffentlich (nur lokal)"
   local-home: "Home (nur lokal)"
   local-followers: "Follower (nur lokal)"
@@ -439,7 +439,7 @@ desktop/views/input-dialog.vue:
   cancel: "Abbrechen"
   ok: "OK"
 desktop/views/components/note-detail.vue:
-  private: "Dieser Post ist privat"
+  private: "Dieser Beitrag ist privat"
   deleted: "Dieser Beitrag wurde entfernt"
   location: "Ort"
   renote: "Anmerkung"
@@ -447,7 +447,7 @@ desktop/views/components/note-detail.vue:
 desktop/views/components/note.vue:
   reply: "Antworten"
   renote: "Anmerkung"
-  private: "Dieser Post ist privat"
+  private: "Dieser Beitrag ist privat"
   deleted: "Dieser Beitrag wurde entfernt"
 desktop/views/components/notes.vue:
   error: "Laden fehlgeschlagen."
@@ -459,16 +459,16 @@ desktop/views/components/post-form.vue:
   hide-contents: "Inhalt verstecken"
   reply-placeholder: "Antworte auf diese Anmerkung..."
   quote-placeholder: "Zitiere diese Anmerkung..."
-  submit: "Beitragsform"
+  submit: "Abschicken"
   reply: "Antworten"
-  renote: "Anmerkung"
+  renote: "Abschicken"
   posted: "Gepostet!"
   replied: "Geantwortet!"
   reposted: "Weitergesagt!"
   note-failed: "Anmerkung fehlgeschlagen"
   reply-failed: "Antwort fehlgeschlagen"
   renote-failed: "Anmerkung fehlgeschlagen"
-  posting: "Posting"
+  posting: "Sende"
   attach-media-from-local: "Medien von deinem PC hinzufügen"
   attach-media-from-drive: "Medien von deinem Speicher hinzufügen"
   create-poll: "Eine Abstimmung erstellen"
@@ -477,7 +477,7 @@ desktop/views/components/post-form.vue:
   error: "Fehler"
   enter-username: "Bitte gib einen Benutzernamen ein..."
 desktop/views/components/post-form-window.vue:
-  note: "Neue Notiz"
+  note: "Neuer Beitrag"
   reply: "Antworten"
   attaches: "{} Medien hinzugefügt"
   uploading-media: "Lade {} Medien hoch"
@@ -510,7 +510,7 @@ common/views/components/drive-settings.vue:
 common/views/components/mute-and-block.vue:
   save: "Speichern"
 desktop/views/components/sub-note-content.vue:
-  private: "Dieser Post ist privat"
+  private: "Dieser Beitrag ist privat"
   deleted: "Dieser Beitrag wurde entfernt"
   poll: "Umfrage"
 desktop/views/components/settings.tags.vue:
@@ -529,7 +529,7 @@ desktop/views/components/ui.header.nav.vue:
 desktop/views/components/ui.header.notifications.vue:
   title: "Benachrichtigungen"
 desktop/views/components/ui.header.post.vue:
-  post: "Einen neuen Post erstellen"
+  post: "Einen neuen Beitrag erstellen"
 desktop/views/components/ui.header.search.vue:
   placeholder: "Suchen"
 desktop/views/components/user-lists-window.vue:
@@ -600,22 +600,22 @@ mobile/views/components/drive.file-detail.vue:
   download: "Download"
   rename: "Umbenennen"
 mobile/views/components/note.vue:
-  private: "Dieser Post ist privat"
+  private: "Dieser Beitrag ist privat"
   deleted: "Dieser Beitrag wurde entfernt"
   location: "Ort"
 mobile/views/components/note-detail.vue:
   reply: "Antworten"
-  private: "Dieser Post ist privat"
+  private: "Dieser Beitrag ist privat"
   deleted: "Dieser Beitrag wurde entfernt"
   location: "Ort"
 mobile/views/components/notifications.vue:
   empty: "Keine Benachrichtigungen"
 mobile/views/components/post-form.vue:
   reply: "Antworten"
-  renote: "Anmerkung"
+  renote: "Anmerken"
   reply-placeholder: "Antworte auf diese Anmerkung..."
 mobile/views/components/sub-note-content.vue:
-  private: "Dieser Post ist privat"
+  private: "Dieser Beitrag ist privat"
   deleted: "Dieser Beitrag wurde entfernt"
   poll: "Umfrage"
 mobile/views/components/ui.nav.vue:
